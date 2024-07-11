@@ -16,6 +16,18 @@ public class Calculater {
         {
             return n1+n2;
         };
+    public static int div(int n1, int n2)
+        {
+            return n1/n2;
+        };
+    public static int sub(int n1, int n2)
+        {
+            return n1-n2;
+        };
+    public static int multi(int n1, int n2)
+        {
+            return n1*n2;
+        };
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -31,6 +43,8 @@ public class Calculater {
         
         if(choice ==1)
         {
+            System.out.println("Enter Two numbers");
+
            int n1 = scan.nextInt();
            int n2 = scan.nextInt();
             
@@ -38,32 +52,30 @@ public class Calculater {
             
         }else if (choice==2)
         {
-            
+             System.out.println("Enter Two numbers");
+
            int n1 = scan.nextInt();
            int n2 = scan.nextInt();
-            System.out.println(n1-n2);
+            
+            System.out.println(sub(n1,n2));
         }
         else if (choice==3)
         {
-            int n1,n2;
-            Scanner num1 = new Scanner(System.in);
-            Scanner num2 = new Scanner(System.in);
+             System.out.println("Enter Two numbers");
 
-            n1 = num1.nextInt();
-            n2 = num2.nextInt();
+           int n1 = scan.nextInt();
+           int n2 = scan.nextInt();
             
-            System.out.println(n1/n2);
+            System.out.println(div(n1,n2));
         }
         else if (choice==4)
         {
-            int n1,n2;
-            Scanner num1 = new Scanner(System.in);
-            Scanner num2 = new Scanner(System.in);
+             System.out.println("Enter Two numbers");
 
-            n1 = num1.nextInt();
-            n2 = num2.nextInt();
+           int n1 = scan.nextInt();
+           int n2 = scan.nextInt();
             
-            System.out.println(n1*n2);
+            System.out.println(multi(n1,n2));
         }
         else 
         {
